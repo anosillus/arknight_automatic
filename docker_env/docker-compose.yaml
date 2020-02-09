@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  jupyter_ark:
+    container_name: arknight_container
+    restart: always
+    build:
+      context: ./python_env
+    volumes:
+      - /dev/bus/usb:/dev/bus/usb
+      - ./../main:/home/main
+      - ./../template:/home/template
+      - ./../playground:/home/playground
+      - ./../data:/home/data
+      - ./../src:/home/src
+      - ./../reports:/home/reports
+      - ./../docker_env/python_env:/home/env
+    ports:
+      - "18888:8888"
+    environment:
+      ROOT: "TRUE"
+      TZ: Asia/Tokyo
+      network: host
+    command: "jupyter lab --notebook-dir=/home/main"
+    privileged: true

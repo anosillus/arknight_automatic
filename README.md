@@ -1,9 +1,7 @@
-arknight
+ソシャゲ自動化 in docker
 ==============================
 
-A short description of the project.
-
-Project Organization
+対応 アークナイツの周回イベント
 ------------
 
 ソシャゲの自動化をdocker上から出来るか試した。  
@@ -25,6 +23,7 @@ how
 - 複数端末の操作は対応させてない、多分出来るし、お金にするならそういうの対応させるべきだと思う(しませんが)
 - 高度な(完全)自動化、出来なくななさそうだが工数かかりそうなのでやってない。
 - ソシャゲ、UI設計以外には興味がない
+- このゲームはローカルに重要なデータ保持しているので解析してレベル上げするのが電力消費が一番少ないし早い(やらない)
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
